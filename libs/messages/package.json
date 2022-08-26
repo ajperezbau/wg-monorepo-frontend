@@ -1,0 +1,13 @@
+{
+  "name": "wg-monorepo-frontend-messages",
+  "version": "0.0.0",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  }
+}
