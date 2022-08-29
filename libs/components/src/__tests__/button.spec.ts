@@ -12,7 +12,7 @@ describe('button', () => {
       }
     });
 
-    expect(component.text()).toContain('testing prop');
+    expect(component.text()).toContain('Testing prop');
   });
 
   test('should render default slot', () => {
@@ -25,7 +25,7 @@ describe('button', () => {
       }
     });
 
-    expect(component.text()).toContain('Testing slot');
+    expect(component.text()).toContain('testing slot');
   });
 
 });

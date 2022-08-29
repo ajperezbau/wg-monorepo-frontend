@@ -3,6 +3,14 @@ import path from 'path';
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
+  plugins: [
+    vue()
+  ],
+  resolve: {
+    alias: {
+      'wg-monorepo-frontend-utils': path.resolve(__dirname, '../../libs/utils/dist')
+    }
+  },
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
@@ -22,9 +30,6 @@ export default defineConfig({
       }
     }
   },
-  plugins: [
-    vue()
-  ],
   test: {
     environment: 'jsdom'
   }
