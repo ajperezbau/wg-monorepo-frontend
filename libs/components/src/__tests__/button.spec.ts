@@ -25,7 +25,7 @@ describe('button', () => {
       }
     });
 
-    expect(component.text()).toContain('testing slot');
+    expect(component.text()).toContain('Testing slot');
   });
 
 });
