@@ -2,6 +2,8 @@
   "name": "wg-monorepo-frontend",
   "version": "0.0.0",
   "workspaces": [
+    "libs/utils",
+    "libs/components",
     "libs/*",
     "apps/*"
   ],
