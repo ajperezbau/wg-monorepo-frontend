@@ -2,14 +2,14 @@ import vue from '@vitejs/plugin-vue';
 import path from 'path';
 import { defineConfig } from 'vitest/config';
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   plugins: [
     vue()
   ],
   resolve: {
-    alias: {
+    alias: mode === 'test' ? {
       'wg-monorepo-frontend-utils': path.resolve(__dirname, '../../libs/utils/dist')
-    }
+    } : undefined
   },
   build: {
     lib: {
@@ -33,4 +33,4 @@ export default defineConfig({
   test: {
     environment: 'jsdom'
   }
-});
+}));
