@@ -7,17 +7,26 @@
     "apps/*"
   ],
   "scripts": {
+    "postinstall": "turbo run build",
     "test": "turbo run test",
+    "lint": "eslint libs apps --ext .ts,.tsx,.vue --quiet --ignore-path .gitignore",
     "build": "turbo run build",
     "dev": "turbo run dev"
   },
   "devDependencies": {
     "@types/jest": "^28.1.7",
     "@types/node": "^18.7.9",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "@vue/eslint-config-typescript": "^11.0.2",
+    "eslint": "^8.24.0",
+    "eslint-plugin-vue": "^9.6.0",
+    "eslint-plugin-vuejs-accessibility": "^1.2.0",
     "jest": "^28.1.3",
     "ts-jest": "^28.0.8",
     "ts-node": "^10.9.1",
     "turbo": "^1.5.5",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "vue-eslint-parser": "^9.1.0"
   }
 }

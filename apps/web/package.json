@@ -5,7 +5,8 @@
     "dev": "vite",
     "test": "vitest run",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint --ext .js,.ts,.tsx,.vue ."
   },
   "dependencies": {
     "vue": "^3.2.37",

@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "vue": "^3.2.37",
-    "wg-monorepo-frontend-utils": "0.0.0"
+    "wg-monorepo-frontend-utils": "0.0.0",
+    "@empathyco/x-types": "10.0.0-alpha.37"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.3",
